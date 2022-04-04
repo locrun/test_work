@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test_work/static/css/main.9b5e4653.css",
-    "main.js": "/test_work/static/js/main.52648c7f.js",
+    "main.js": "/test_work/static/js/main.c9cb80a7.js",
     "static/media/OpenSans-Medium.woff": "/test_work/static/media/OpenSans-Medium.cadee250a7a566e38d78.woff",
     "static/media/OpenSans-Regular.woff": "/test_work/static/media/OpenSans-Regular.4415d5068ee7b8d7839e.woff",
     "static/media/OpenSans-SemiBold.woff": "/test_work/static/media/OpenSans-SemiBold.a79d990dfcee7e05d141.woff",
@@ -15,10 +15,10 @@
     "index.html": "/test_work/index.html",
     "static/media/quotes.svg": "/test_work/static/media/quotes.6219b206ad80c8a64d8fa3db7080ef27.svg",
     "main.9b5e4653.css.map": "/test_work/static/css/main.9b5e4653.css.map",
-    "main.52648c7f.js.map": "/test_work/static/js/main.52648c7f.js.map"
+    "main.c9cb80a7.js.map": "/test_work/static/js/main.c9cb80a7.js.map"
   },
   "entrypoints": [
     "static/css/main.9b5e4653.css",
-    "static/js/main.52648c7f.js"
+    "static/js/main.c9cb80a7.js"
   ]
 }
