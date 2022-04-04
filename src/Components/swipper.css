@@ -17,11 +17,6 @@
     margin-bottom: 15px;
   }
 }
-@media (min-width: 1024px) {
-  .slick-slider.slick-initialized {
-    padding: 0 30px;
-  }
-}
 
 .slick-slide div > div {
   max-width: 290px;
