@@ -7,7 +7,7 @@ export const HeaderContainer = styled.div`
   text-align: center;
 `;
 export const PostContainer = styled.div`
-  max-width: 1013px;
+  max-width: 1040px;
 `;
 
 export const FlexWrapper = styled.div`
