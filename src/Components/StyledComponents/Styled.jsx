@@ -7,7 +7,7 @@ export const HeaderContainer = styled.div`
   text-align: center;
 `;
 export const PostContainer = styled.div`
-  max-width: 1000px;
+  max-width: 1013px;
 `;
 
 export const FlexWrapper = styled.div`
@@ -18,7 +18,6 @@ export const FlexWrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 15px;
     margin-top: 50px;
   }
 `;
@@ -56,7 +55,7 @@ export const Title = styled.h2`
   font-weight: 600;
   font-size: 28px;
   color: #384758;
-  margin-top:0;
+  margin-top:10px;
   margin-bottom:25px;
 
   @media(min-width:768px){

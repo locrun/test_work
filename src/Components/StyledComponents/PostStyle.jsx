@@ -10,11 +10,13 @@ export const PostTitle = styled.h3`
   font-size: 22px;
   line-height: 24px;
   margin-bottom: 10px;
+  margin-top: 0px;
   color: #384758;
 
   @media (min-width: 768px) {
     font-size: 24px;
     line-height: 28px;
+    margin-top: 24px;
   }
 `;
 export const PostBody = styled.p`
