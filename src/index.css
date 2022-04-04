@@ -1,0 +1,64 @@
+@import "./static/fonts/fonts.css";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px 15px 30px 15px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container:after {
+  position: absolute;
+  display: block;
+  content: url("./static/images/decor-top.svg");
+  right: -38px;
+  top: 170px;
+}
+@media (min-width: 768px) {
+  .container:after {
+    position: absolute;
+    display: block;
+    content: url("./static/images/decor-top.svg");
+    right: -38px;
+    top: 160px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container:after {
+    position: absolute;
+    display: block;
+    content: url("./static/images/decor-top.svg");
+    right: -38px;
+    top: 208px;
+  }
+}
+@media (min-width: 992px) {
+  .container:after {
+    position: absolute;
+    display: block;
+    content: url("./static/images/decor-top.svg");
+    right: -38px;
+    top: 240px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    padding: 45px 25px 60px 25px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    overflow-x: visible;
+  }
+}
