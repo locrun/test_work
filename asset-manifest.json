@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test_work/static/css/main.9b5e4653.css",
-    "main.js": "/test_work/static/js/main.c9cb80a7.js",
+    "main.css": "/test_work/static/css/main.48356396.css",
+    "main.js": "/test_work/static/js/main.38340b9c.js",
     "static/media/OpenSans-Medium.woff": "/test_work/static/media/OpenSans-Medium.cadee250a7a566e38d78.woff",
     "static/media/OpenSans-Regular.woff": "/test_work/static/media/OpenSans-Regular.4415d5068ee7b8d7839e.woff",
     "static/media/OpenSans-SemiBold.woff": "/test_work/static/media/OpenSans-SemiBold.a79d990dfcee7e05d141.woff",
@@ -14,11 +14,11 @@
     "static/media/next.svg": "/test_work/static/media/next.e8e60eb6cbe02a51fb27.svg",
     "index.html": "/test_work/index.html",
     "static/media/quotes.svg": "/test_work/static/media/quotes.6219b206ad80c8a64d8fa3db7080ef27.svg",
-    "main.9b5e4653.css.map": "/test_work/static/css/main.9b5e4653.css.map",
-    "main.c9cb80a7.js.map": "/test_work/static/js/main.c9cb80a7.js.map"
+    "main.48356396.css.map": "/test_work/static/css/main.48356396.css.map",
+    "main.38340b9c.js.map": "/test_work/static/js/main.38340b9c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b5e4653.css",
-    "static/js/main.c9cb80a7.js"
+    "static/css/main.48356396.css",
+    "static/js/main.38340b9c.js"
   ]
 }
