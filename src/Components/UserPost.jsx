@@ -1,7 +1,6 @@
 import React from "react";
 import { useRequest } from "../useRequest";
-import { Post, PostTitle, PostBody } from "./StyledComponents/PostStyle";
-import s from "./userprofile.module.scss";
+import { Post, PostHeading, SubTitle } from "./StyledComponents/Styled";
 
 export const UserPost = ({ userId }) => {
   const { data } = useRequest(`users/${userId}/posts`);
@@ -11,8 +10,10 @@ export const UserPost = ({ userId }) => {
       {posts.map(({ title, body }) => {
         return (
           <React.Fragment key={title}>
-            <PostTitle>{title}</PostTitle>
-            <PostBody className={s.postBody}>{body}</PostBody>
+            <PostHeading>{title}</PostHeading>
+            <SubTitle alignLeft size>
+              {body}
+            </SubTitle>
           </React.Fragment>
         );
       })}

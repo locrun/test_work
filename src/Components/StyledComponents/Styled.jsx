@@ -92,14 +92,32 @@ export const Title = styled.h2`
 export const SubTitle = styled.p`
   margin: 0;
   display: inline-block;
-  text-align: center;
+  text-align: ${(props) => (props.alignLeft ? "left" : "center")};
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   color: #606f81;
 
   @media (min-width: 992px) {
-    font-size: 18px;
+    font-size: ${(props) => (props.size ? "20px" : "18px")};
     line-height: 27px;
+  }
+`;
+export const Post = styled.div`
+  padding: 5px 0 0;
+`;
+export const PostHeading = styled.h3`
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  color: #384758;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 24px;
   }
 `;

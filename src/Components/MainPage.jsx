@@ -9,13 +9,14 @@ import {
   PostContainer,
 } from "./StyledComponents/Styled";
 
+import { UserProfile } from "./UserProfile";
+import { UserPost } from "./UserPost";
+
 import { settings } from "./settings";
 import "./swipper.css";
 
 import decor from "../static/images/decor-bottom.svg";
 
-import { UserProfile } from "./UserProfile";
-import { UserPost } from "./UserPost";
 import Slider from "react-slick";
 
 import { useRequest } from "../useRequest";
@@ -54,7 +55,7 @@ export const MainPage = () => {
         <Decor src={decor} alt="decor" />
         <PostContainer>
           {selected && <Title quote>3 актуальных поста {userName}</Title>}
-          <UserPost userId={selected} subtitle={SubTitle} />
+          <UserPost userId={selected} />
         </PostContainer>
       </FlexWrapper>
     </>
