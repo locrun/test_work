@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-export const useRequest = (params) => {
-  const [data, setData] = useState([]);
+export const useRequest = (params: any) => {
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
     const requestHandler = async () => {
@@ -10,7 +10,7 @@ export const useRequest = (params) => {
           `https://jsonplaceholder.typicode.com/${params}`
         );
         const response = await request.json();
-        setData(response);
+        setUsers(response);
       } catch (error) {
         console.log(error);
       }
@@ -19,6 +19,6 @@ export const useRequest = (params) => {
   }, [params]);
 
   return {
-    data,
+    users,
   };
 };

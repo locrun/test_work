@@ -16,30 +16,29 @@ import { settings } from "./settings";
 import "./swipper.css";
 
 import decor from "../static/images/decor-bottom.svg";
-
 import Slider from "react-slick";
-
 import { useRequest } from "../useRequest";
 
 export const MainPage = () => {
-  const { data } = useRequest("users");
-  const [selected, setSelected] = useState(null);
+  const { users } = useRequest("users");
+
+  const [selected, setSelected] = useState<number | null>(null);
   const [userName, setUserName] = useState("");
 
-  const onHandleClick = (userId, userName) => {
+  const onHandleClick = (userId: number, userName: string) => {
     setSelected(userId);
     setUserName(userName);
   };
-
   return (
     <>
       <HeaderContainer>
-        <Title>Наши топ-блогеры</Title>
-        <SubTitle>Лучшие специалисты в своем деле,</SubTitle>
-        <SubTitle>средний опыт работы в профессии - 27 лет</SubTitle>
+        <Title>Наши топ - блогеры </Title>
+        <SubTitle> Лучшие специалисты в своем деле, </SubTitle>
+        <SubTitle> средний опыт работы в профессии - 27 лет </SubTitle>
       </HeaderContainer>
+
       <Slider {...settings}>
-        {data.map((user) => {
+        {users.map((user: { id: number; name: string; company: any }) => {
           const active = selected === user.id;
           return (
             <div
@@ -51,10 +50,11 @@ export const MainPage = () => {
           );
         })}
       </Slider>
+
       <FlexWrapper>
         <Decor src={decor} alt="decor" />
         <PostContainer>
-          {selected && <Title quote>3 актуальных поста {userName}</Title>}
+          {selected && <Title quote> 3 актуальных поста {userName} </Title>}
           <UserPost userId={selected} />
         </PostContainer>
       </FlexWrapper>

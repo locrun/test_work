@@ -50,56 +50,52 @@ export const Decor = styled.img`
   }
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h2<{ quote?: boolean }>`
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
   color: #384758;
-  margin-top:10px;
-  margin-bottom:25px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 
-  @media(min-width:768px){
+  @media (min-width: 768px) {
     font-size: 38px;
     line-height: 38px;
- 
   }
-  @media(min-width:1024px){
+  @media (min-width: 1024px) {
     font-size: 48px;
     line-height: 48px;
   }
 
- 
-
   &:before {
-   display:none;
+    display: none;
 
-   @media(min-width:768px){
+    @media (min-width: 768px) {
       position: absolute;
       display: block;
-      content:${(props) => (props.quote ? `url(${quotes}` : "")} );
-      left:13.5%;
+      content:${({ quote }) => (quote ? `url(${quotes}` : "")} );
+      left: 13.5%;
     }
-    @media(min-width:992px){
-      left:20%;
+    @media (min-width: 992px) {
+      left: 20%;
     }
-    @media(min-width:1300px){
-      left:17%;
+    @media (min-width: 1300px) {
+      left: 17%;
     }
-
   }
 `;
 
-export const SubTitle = styled.p`
+export const SubTitle = styled.p<{ alignLeft?: string } & { size?: string }>`
   margin: 0;
   display: inline-block;
-  text-align: ${(props) => (props.alignLeft ? "left" : "center")};
+  text-align: ${({ alignLeft }) => alignLeft || "center"};
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   color: #606f81;
 
   @media (min-width: 992px) {
-    font-size: ${(props) => (props.size ? "20px" : "18px")};
+    font-size: ${({ size }) => size || "18px"};
     line-height: 27px;
   }
 `;
