@@ -27,25 +27,25 @@ export const Decor = styled.img`
   width: 145px;
   @media (min-width: 768px) {
     width: 180px;
-    margin-right: 75px;
+    margin-right: 55px;
   }
 
   @media (min-width: 992px) {
     display: block;
     margin-top: 195px;
-    margin-left: -39px;
+    margin-left: -25px;
     margin-right: 180px;
   }
   @media (min-width: 1024px) {
     display: block;
     margin-top: 195px;
-    margin-left: -39px;
+    margin-left: -25px;
     margin-right: 185px;
   }
   @media (min-width: 1300px) {
     display: block;
     margin-top: 195px;
-    margin-left: -39px;
+    margin-left: -25px;
     margin-right: 175px;
   }
 `;
